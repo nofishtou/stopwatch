@@ -120,6 +120,12 @@
               "devServerTarget": "stopwatch:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://nofishtou.github.io/stopwatch/"
+          }
         }
       }
     }

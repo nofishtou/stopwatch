@@ -1,0 +1,17 @@
+<div class="stopwatch-container">
+  <div class="stopwatch-title">
+    <h1>Секундомер</h1>
+  </div>
+  <div class="stopwatch-time">
+    <span>{{time.hours}}</span>
+    <span>:</span>
+    <span>{{time.minutes}}</span>
+    <span>:</span>
+    <span>{{time.seconds}}</span>
+  </div>
+  <div class="stopwatch-control-bar">
+    <button class="stopwatch-button start" (click)="onClickBegin()">{{ isStarted ? "Стоп" : "Старт" }}</button>
+    <button #stopwatchWaitButton class="stopwatch-button" >Пауза</button>
+    <button class="stopwatch-button" (click)="onClickReset()">Сбросить</button>
+  </div>
+</div>
